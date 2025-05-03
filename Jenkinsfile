@@ -43,7 +43,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("Jaz02/react-app")
+                    app = docker.build("jaz02/react-app")
                     app.inside {
                         sh 'echo $(curl localhost:1233)'
                     }
